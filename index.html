@@ -26,6 +26,8 @@
       --facebook-hover: #0c63d4;
       --whatsapp: #25d366;
       --whatsapp-hover: #20ba5a;
+      --claude: #cc785c;
+      --claude-hover: #b5603e;
       --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -285,6 +287,14 @@
       background: linear-gradient(135deg, var(--whatsapp-hover) 0%, #189a47 100%);
     }
     
+    .btn-claude {
+      background: linear-gradient(135deg, var(--claude) 0%, #b5603e 100%);
+    }
+    
+    .btn-claude:hover {
+      background: linear-gradient(135deg, var(--claude-hover) 0%, #9a4d2e 100%);
+    }
+    
     /* Badge */
     .badge {
       display: inline-block;
@@ -362,6 +372,7 @@
     .btn:nth-child(1) { animation-delay: 0.1s; }
     .btn:nth-child(2) { animation-delay: 0.2s; }
     .btn:nth-child(3) { animation-delay: 0.3s; }
+    .btn:nth-child(4) { animation-delay: 0.4s; }
   </style>
 </head>
 <body>
@@ -399,6 +410,11 @@
         <a class="btn btn-whatsapp" href="https://wa.me/201006789515" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-whatsapp"></i>
           <span><span class="badge">مباشر</span>واتساب</span>
+        </a>
+        
+        <a class="btn btn-claude" href="https://claude.ai" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-robot"></i>
+          <span><span class="badge">AI</span>كلود للذكاء الاصطناعي</span>
         </a>
       </div>
       
